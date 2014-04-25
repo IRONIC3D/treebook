@@ -1,27 +1,28 @@
-<h2>All Statuses</h2>
-
+<div class="page-header">
+  <h2>All Statuses</h2>
+</div>
 <div class="row">
   <% @statuses.each do |status| %>
     <div class="col-xs-6 col-md-3">
       <div class="box panel panel-primary">
-        <div class="panel-heading center">
-          <h4><strong><%= status.name %></strong></h4>
+        <div class="panel-heading">
+          <strong><%= status.name %></strong>
         </div>
         <div class="panel-body">
           <p><%= status.content %></p>
         </div>
         <div class="panel-footer">
-          <%= link_to status do %>
-            <span class="glyphicon glyphicon-eye-open"></span> View
-          <% end %>
-          -
-          <%= link_to edit_status_path(status) do %>
-            <span class="glyphicon glyphicon-edit"></span> Edit
-          <% end %>
-          -
-          <%= link_to status, method: :delete, data: { confirm: 'Are you sure?' } do %>
-            <span class="glyphicon glyphicon-trash"></span> Delete
-          <% end %>
+          <%= link_to time_ago_in_words(status.created_at) + ' ago', status %>
+          <hr>
+          <div class="admin">
+            <%= link_to edit_status_path(status) do %>
+              <span class="glyphicon glyphicon-edit"></span> Edit
+            <% end %>
+            -
+            <%= link_to status, method: :delete, data: { confirm: 'Are you sure?' } do %>
+              <span class="glyphicon glyphicon-trash"></span> Delete
+            <% end %>
+          </div>
         </div>
       </div>
     </div>
