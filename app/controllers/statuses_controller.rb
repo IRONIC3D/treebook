@@ -2,7 +2,7 @@ class StatusesController < ApplicationController
   before_action :set_status, only: [:show, :edit, :update, :destroy]
 
   def index
-    @statuses = Status.all
+    @statuses = Status.all.order(created_at: :desc)
   end
 
   def show
