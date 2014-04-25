@@ -26,3 +26,20 @@ $jumbotron-bg:                                         white;
 .navbar-brand {
      font-weight: bold;
 }
+
+.panel-primary.hover {
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+
+.panel-primary .panel-footer .admin {
+	-webkit-transition: opacity 0.5s ease-out;
+	opacity: 0;
+}
+
+.panel-primary.hover .panel-footer .admin {
+	display: inline;
+	-webkit-transition: opacity 0.5s ease-in;
+	opacity: 1;
+}
