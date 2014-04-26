@@ -11,7 +11,8 @@
   <% @statuses.each do |status| %>
     <div class="col-xs-6 col-md-3">
       <div class="box panel panel-primary">
-        <div class="panel-heading">
+        <div class="panel-heading center">
+          <%= status.user.profile_name %>
         </div>
         <div class="panel-body">
           <p><%= status.content %></p>
