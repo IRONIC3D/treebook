@@ -1,5 +1,13 @@
-<h1>New status</h1>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h2>Create a New Status</h2>
+  </div>
+  <div class="panel-body">
+    <%= render 'form' %>
+  </div>
+  <div class="panel-footer">
+    <%= link_to 'Back', statuses_path %>
+  </div>
+</div>
 
-<%= render 'form' %>
 
-<%= link_to 'Back', statuses_path %>
