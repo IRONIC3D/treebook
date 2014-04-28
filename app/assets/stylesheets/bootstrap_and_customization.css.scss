@@ -19,10 +19,11 @@ $jumbotron-bg:                                         white;
 }
 
 .avatar {
-	margin: left;
-	-webkit-box-shadow: 4px 4px 0px 0px rgba(54, 146, 153, 0.75);
-	-moz-box-shadow:    4px 4px 0px 0px rgba(54, 146, 153, 0.75);
-	box-shadow:         4px 4px 0px 0px rgba(54, 146, 153, 0.75);
+	position: relative;
+	left: -68px;
+	-webkit-box-shadow: 4px 4px 0px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    4px 4px 0px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         4px 4px 0px 0px rgba(50, 50, 50, 0.75);
 }
 
 .time {
