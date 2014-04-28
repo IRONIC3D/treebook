@@ -21,4 +21,9 @@ class CustomRoutesTest < ActionDispatch::IntegrationTest
     get '/account'
     assert :success
   end
+
+  test "that a profile page works" do
+    get "/carole"
+    assert :success
+  end
 end

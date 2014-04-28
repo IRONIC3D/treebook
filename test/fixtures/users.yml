@@ -5,3 +5,11 @@ carole:
   email: "carole.issa@gmail.com"
   encrypted_password: "password"
   encrypted_password: "password"
+
+iyad:
+  first_name: "Iyad"
+  last_name: "Horani"
+  profile_name: "IRONIC3D"
+  email: "i3d@ironic3d.com"
+  encrypted_password: "password"
+  encrypted_password: "password"

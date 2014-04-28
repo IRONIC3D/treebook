@@ -15,4 +15,6 @@ Rails.application.routes.draw do
   get 'feed', to: "statuses#index", as: :feed
 
   root "statuses#index"
+
+  get "/:id", to: "profiles#show"
 end
