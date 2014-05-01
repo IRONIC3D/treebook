@@ -13,4 +13,5 @@ gem 'devise', '~> 3.2.4'
 gem 'simple_form', '~> 3.1.0.rc1', github: 'plataformatec/simple_form'
 
 gem 'sdoc', '~> 0.4.0',          group: :doc
-gem 'spring',        group: :development
+gem 'spring',                    group: :development
+gem 'pg',                        group: :production
